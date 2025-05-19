@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Photo Gallery</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .B{text-align: center;}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+        <div style="background-image:
+         url(stephen-andrews-GwgFPDXiSIs-unsplash.jpg);
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+        ">
+            <div class = "navdiv">
+            <div class = "logo">
+                <h2 class = "logoname">HMS</h2>  
+            </div> 
+            
+            <ul>
+                <ul>
+                    <li><a href="HOME PAGE.html"><button class="home-button">HOME</button></a>
+                    <li><a href="ABOUT US.HTML" ><button class="aboutus-button">ABOUT US</button></a></li>
+                    <li><a href="SERVICES.HTML" ><button class="services-button">SERVICES</button>
+                    <li><a href="Gallery.html" ><button class="gallery-button">GALLERY</button></li>
+                    <li><a href="CONTACT US.HTML"><button class="contact-button">CONTACT US</button>
+                </li>
+            </a>
+            </ul>
+           </div>
+           </div>
+        </nav>
+         <h1 class="B">WELCOME TO OUR GAlLERY</h1>
+         <div class="full-img" id="fullimgBox">
+            <img src="pic1.png" id="fullimg"> 
+            <span onclick="closefullimg()">x</span>
+         </div>
+    <div class="img-gallery">
+
+        <img src="pic1.png" onclick="openfullimg(this.src)"> 
+        <img src="pic2.png" onclick="openfullimg(this.src)"> 
+        <img src="pic3.png" onclick="openfullimg(this.src)"> 
+        <img src="pic4.png" onclick="openfullimg(this.src)"> 
+        <img src="pic5.png" onclick="openfullimg(this.src)"> 
+        <img src="pic6.png" onclick="openfullimg(this.src)"> 
+        <img src="pic7.png" onclick="openfullimg(this.src)"> 
+        <img src="pic8.png" onclick="openfullimg(this.src)"> 
+        <img src="pic9.png" onclick="openfullimg(this.src)"> 
+        <img src="pic10.png" onclick="openfullimg(this.src)"> 
+        <img src="pic11.JPEG" onclick="openfullimg(this.src)"> 
+        <img src="pic12.JPEG" onclick="openfullimg(this.src)"> 
+        <img src="esa.jpeg" onclick="openfullimg(this.src)"> 
+    </div>
+    <script>
+
+        var fullimgBox = document.getElementById("fullimgBox");
+         var fullimg= document.getElementById("fullimg");
+
+         function openfullimg(pic){
+            fullimgBox.style.display="flex";
+            fullimg.src=pic;
+
+         }
+         function closefullimg(){
+            fullimgBox.style.display="none";
+         }
+
+
+
+    </script>
+        
+    </body>
+</html>
